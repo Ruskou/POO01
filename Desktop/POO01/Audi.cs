@@ -2,7 +2,7 @@ using System;
 
 namespace teste04 {
 
-    public class Audi : Carros 
+    public class Audi : Car
     {
         public void MotorAudi()
         {

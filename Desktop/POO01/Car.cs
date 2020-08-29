@@ -2,7 +2,7 @@ using System;
 
 namespace teste04
 {
-    public abstract class Carros
+    public abstract class Car
     
     {
         #region Properties
@@ -20,22 +20,22 @@ namespace teste04
        
        public void RampUp(){
 
-           Console.WriteLine("The car {Name} is Built.");
+           Console.WriteLine($"The car {Name} is Built.");
        }
 
        public void TurnOn(){
            
-           Console.WriteLine("The car {Name} is started");
+           Console.WriteLine($"The car {Name} is started");
        }
 
        public void Sold(){
 
-           Console.WriteLine("The car {Name} is Sold.");
+           Console.WriteLine($"The car {Name} is Sold.");
 
            } 
        public void Drive(){
 
-           Console.WriteLine("The car {Name} is Driven.");
+           Console.WriteLine($"The car {Name} is Driven.");
        }
        
        #endregion
