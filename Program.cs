@@ -1,4 +1,6 @@
-﻿using Dealership.Model;
+﻿using System;
+using Dealership.Model;
+using Dealership.Model.Base;
 
 namespace Dealership
 {
@@ -6,19 +8,33 @@ namespace Dealership
     {
         static void Main(string[] args)
         {
-            Audi audi = new Audi();
-            audi.Name = "Audi A3";
-            audi.Length = 4;
-            audi.Height = 2;
-            audi.Color = "Black";
-            audi.RimSize = 17;
+            try
+            {
+                Console.WriteLine("Choose the car that you want:");
+                string choosenCar = Console.ReadLine();
+    
+                Car car = null;
+                if (choosenCar == "Audi A3")
+                    car = new Audi();
+    
+                car.Name = "Audi A3";
+                car.Length = 4;
+                car.Height = 2;
+                car.Color = "Black";
+                car.RimSize = 17;
+    
+                car.RampUp();
+                car.TurnOn();
+                car.Sell();
+                car.Drive();
+                car.Accelerate();
+            }
+            catch(Exception)
+            {
+                Console.WriteLine("This model of car does not exist.");
 
-            audi.RampUp();
-            audi.TurnOn();
-            audi.Sell();
-            audi.Drive();
-            audi.MotorAudi();
-            audi.Accelerate();
+                throw;
+            }
         }
     }
 }
