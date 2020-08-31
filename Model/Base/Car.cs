@@ -37,6 +37,8 @@ namespace Dealership.Model.Base
 
            Console.WriteLine($"The car {Name} is Driven.");
        }
+
+       public abstract void Accelerate();
        
        #endregion
        
