@@ -1,9 +1,8 @@
 using System;
 
-namespace teste04
+namespace Dealership.Model.Base
 {
     public abstract class Car
-    
     {
         #region Properties
 
@@ -11,7 +10,8 @@ namespace teste04
        public int Length { get; set; } // Comprimento
        public int Height { get; set; } // Altura
        public string Color { get; set; } // Cor
-       public int Wheel { get; set; } // Rodas
+       public int RimSize { get; set; } // Rodas
+       protected int Velocity  { get; set; } // Velocidade
 
        #endregion
        
@@ -28,7 +28,7 @@ namespace teste04
            Console.WriteLine($"The car {Name} is started");
        }
 
-       public void Sold(){
+       public void Sell(){
 
            Console.WriteLine($"The car {Name} is Sold.");
 
