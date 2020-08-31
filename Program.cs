@@ -1,6 +1,6 @@
-﻿using System;
+﻿using Dealership.Model;
 
-namespace teste04
+namespace Dealership
 {
     class Program
     {
@@ -10,7 +10,7 @@ namespace teste04
             audi.Name = "Audi A3";
             audi.Length = 4;
             audi.Height = 2;
-            audi.Color = "Preto";
+            audi.Color = "Black";
             audi.RimSize = 17;
 
             audi.RampUp();
