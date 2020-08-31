@@ -1,9 +1,8 @@
 using System;
 
-namespace teste04
+namespace Dealership
 {
     public abstract class Car
-    
     {
         #region Properties
 
