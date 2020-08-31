@@ -11,7 +11,8 @@ namespace teste04
        public int Length { get; set; } // Comprimento
        public int Height { get; set; } // Altura
        public string Color { get; set; } // Cor
-       public int Wheel { get; set; } // Rodas
+       public int RimSize { get; set; } // Rodas
+
 
        #endregion
        
@@ -19,24 +20,31 @@ namespace teste04
          #region Behaviors
        
        public void RampUp(){
+           
 
-           Console.WriteLine($"The car {Name} is Built.");
+           Console.WriteLine($"The {Name} car of {Color} color with {Length} meters long and {Height} meters high is built with {RimSize} wheels.");
        }
 
        public void TurnOn(){
            
-           Console.WriteLine($"The car {Name} is started");
+           Console.WriteLine($"The {Name} car is started");
        }
 
-       public void Sold(){
+       public void Sell(){
 
-           Console.WriteLine($"The car {Name} is Sold.");
+           Console.WriteLine($"The {Name} car is Sold.");
 
            } 
        public void Drive(){
 
-           Console.WriteLine($"The car {Name} is Driven.");
+           Console.WriteLine($"The {Name} car is Driven.");
        }
+
+       public void Accelerate(){
+
+           Console.WriteLine($"The {Name} car is accelerating.");
+           
+       } 
        
        #endregion
        

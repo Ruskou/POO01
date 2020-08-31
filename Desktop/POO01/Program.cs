@@ -8,16 +8,17 @@ namespace teste04
         {
             Audi audi = new Audi();
             audi.Name = "Audi A3";
-            audi.Length = 4000;
-            audi.Height = 180;
+            audi.Length = 4;
+            audi.Height = 2;
             audi.Color = "Preto";
-            audi.Wheel = 17;
+            audi.RimSize = 17;
 
             audi.RampUp();
             audi.TurnOn();
-            audi.Sold();
+            audi.Sell();
             audi.Drive();
-            audi.MotorAudi(); 
+            audi.MotorAudi();
+            audi.Accelerate();
         }
     }
 }
